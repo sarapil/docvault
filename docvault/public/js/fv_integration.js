@@ -7,7 +7,7 @@
 
     const APP_CONFIG = {
         name: "docvault",
-        title: __("DocVault"),
+        title: "DocVault",
         color: "#059669",
         module: "DocVault",
     };

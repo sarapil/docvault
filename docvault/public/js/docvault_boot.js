@@ -3,6 +3,10 @@
 // License: MIT
 
 // DocVault — Global Bootstrap
+(function() {
+"use strict";
+// Guard: skip if frappe core not loaded (transient HTTP/2 proxy failures)
+if (typeof frappe === "undefined" || typeof frappe.provide !== "function") return;
 frappe.provide("docvault");
 
 docvault.COLORS = {
@@ -31,3 +35,4 @@ frappe.realtime.on("dv_review_assigned", (data) => {
         });
     }
 });
+})();
