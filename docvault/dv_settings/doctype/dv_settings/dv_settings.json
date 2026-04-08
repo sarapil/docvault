@@ -1,0 +1,119 @@
+{
+  "name": "DV Settings",
+  "module": "DV Settings",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "is_submittable": 0,
+  "issingle": 1,
+  "istable": 0,
+  "editable_grid": 1,
+  "track_changes": 1,
+  "sort_field": "creation",
+  "sort_order": "DESC",
+  "naming_rule": "autoincrement",
+  "autoname": "",
+  "fields": [
+    {
+      "fieldname": "auto_capture_uploads",
+      "fieldtype": "Check",
+      "label": "Auto-Capture File Uploads",
+      "default": "0"
+    },
+    {
+      "fieldname": "default_storage_provider",
+      "fieldtype": "Link",
+      "options": "DV Storage Provider",
+      "label": "Default Storage Provider"
+    },
+    {
+      "fieldname": "max_file_size_mb",
+      "fieldtype": "Int",
+      "label": "Max File Size (MB)",
+      "default": "100"
+    },
+    {
+      "fieldname": "sb_versioning",
+      "fieldtype": "Section Break",
+      "label": "Versioning"
+    },
+    {
+      "fieldname": "auto_versioning",
+      "fieldtype": "Check",
+      "label": "Auto-Versioning",
+      "default": "1"
+    },
+    {
+      "fieldname": "max_versions",
+      "fieldtype": "Int",
+      "label": "Max Versions Per Document",
+      "default": "50"
+    },
+    {
+      "fieldname": "sb_ocr",
+      "fieldtype": "Section Break",
+      "label": "OCR"
+    },
+    {
+      "fieldname": "enable_ocr",
+      "fieldtype": "Check",
+      "label": "Enable OCR",
+      "default": "0"
+    },
+    {
+      "fieldname": "ocr_provider",
+      "fieldtype": "Select",
+      "options": "\nTesseract\nGoogle Vision\nAWS Textract",
+      "label": "OCR Provider"
+    },
+    {
+      "fieldname": "sb_search",
+      "fieldtype": "Section Break",
+      "label": "Search"
+    },
+    {
+      "fieldname": "enable_full_text_search",
+      "fieldtype": "Check",
+      "label": "Enable Full-Text Search",
+      "default": "1"
+    },
+    {
+      "fieldname": "index_file_content",
+      "fieldtype": "Check",
+      "label": "Index File Content",
+      "default": "0"
+    },
+    {
+      "fieldname": "sb_retention",
+      "fieldtype": "Section Break",
+      "label": "Retention"
+    },
+    {
+      "fieldname": "enable_retention_policies",
+      "fieldtype": "Check",
+      "label": "Enable Retention Policies",
+      "default": "0"
+    },
+    {
+      "fieldname": "archive_storage_provider",
+      "fieldtype": "Link",
+      "options": "DV Storage Provider",
+      "label": "Archive Storage"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "DV Administrator",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "name": "DV Share Link",
+  "module": "DV Collaboration",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "is_submittable": 0,
+  "issingle": 0,
+  "istable": 0,
+  "editable_grid": 1,
+  "track_changes": 1,
+  "sort_field": "creation",
+  "sort_order": "DESC",
+  "naming_rule": "Expression",
+  "autoname": "DV-LINK-.#####",
+  "fields": [
+    {
+      "fieldname": "document",
+      "fieldtype": "Link",
+      "options": "DV Document",
+      "label": "Document",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "link_key",
+      "fieldtype": "Data",
+      "label": "Link Key",
+      "unique": 1,
+      "read_only": 1
+    },
+    {
+      "fieldname": "shared_by",
+      "fieldtype": "Link",
+      "options": "User",
+      "label": "Shared By",
+      "read_only": 1
+    },
+    {
+      "fieldname": "shared_with",
+      "fieldtype": "Data",
+      "label": "Shared With (email)",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "permission_level",
+      "fieldtype": "Select",
+      "options": "View\nDownload\nEdit",
+      "label": "Permission",
+      "default": "View",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "expires_at",
+      "fieldtype": "Datetime",
+      "label": "Expires At"
+    },
+    {
+      "fieldname": "password_protected",
+      "fieldtype": "Check",
+      "label": "Password Protected"
+    },
+    {
+      "fieldname": "link_password",
+      "fieldtype": "Password",
+      "label": "Password"
+    },
+    {
+      "fieldname": "access_count",
+      "fieldtype": "Int",
+      "label": "Access Count",
+      "read_only": 1,
+      "default": "0"
+    },
+    {
+      "fieldname": "max_accesses",
+      "fieldtype": "Int",
+      "label": "Max Accesses"
+    },
+    {
+      "fieldname": "is_active",
+      "fieldtype": "Check",
+      "label": "Active",
+      "default": "1"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "DV Administrator",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ]
+}

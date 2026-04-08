@@ -1,0 +1,10 @@
+{
+  "app": "docvault",
+  "label": "DocVault",
+  "icon": "file-text",
+  "color": "#059669",
+  "languages": [
+    "en",
+    "ar"
+  ]
+}

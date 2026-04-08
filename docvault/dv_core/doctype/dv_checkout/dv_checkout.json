@@ -1,0 +1,74 @@
+{
+  "name": "DV Checkout",
+  "module": "DV Core",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "is_submittable": 0,
+  "issingle": 0,
+  "istable": 0,
+  "editable_grid": 1,
+  "track_changes": 1,
+  "sort_field": "creation",
+  "sort_order": "DESC",
+  "naming_rule": "Expression",
+  "autoname": "DV-CO-.#####",
+  "fields": [
+    {
+      "fieldname": "document",
+      "fieldtype": "Link",
+      "options": "DV Document",
+      "label": "Document",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "checked_out_by",
+      "fieldtype": "Link",
+      "options": "User",
+      "label": "Checked Out By",
+      "read_only": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "checked_out_at",
+      "fieldtype": "Datetime",
+      "label": "Checked Out At",
+      "read_only": 1
+    },
+    {
+      "fieldname": "checked_in_at",
+      "fieldtype": "Datetime",
+      "label": "Checked In At",
+      "read_only": 1
+    },
+    {
+      "fieldname": "reason",
+      "fieldtype": "Small Text",
+      "label": "Reason"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "options": "Checked Out\nChecked In",
+      "label": "Status",
+      "default": "Checked Out",
+      "in_list_view": 1
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "DV Administrator",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ]
+}

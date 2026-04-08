@@ -1,0 +1,139 @@
+{
+  "name": "DV Storage Provider",
+  "module": "DV Integrations",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "is_submittable": 0,
+  "issingle": 0,
+  "istable": 0,
+  "editable_grid": 1,
+  "track_changes": 1,
+  "sort_field": "creation",
+  "sort_order": "DESC",
+  "naming_rule": "By fieldname",
+  "autoname": "field:provider_name",
+  "fields": [
+    {
+      "fieldname": "provider_name",
+      "fieldtype": "Data",
+      "label": "Provider Name",
+      "reqd": 1
+    },
+    {
+      "fieldname": "provider_type",
+      "fieldtype": "Select",
+      "options": "Local\nS3\nNextcloud\nGoogle Drive\nAzure Blob\nSFTP",
+      "label": "Provider Type",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "enabled",
+      "fieldtype": "Check",
+      "label": "Enabled",
+      "default": "1"
+    },
+    {
+      "fieldname": "is_default",
+      "fieldtype": "Check",
+      "label": "Is Default"
+    },
+    {
+      "fieldname": "sb_s3",
+      "fieldtype": "Section Break",
+      "label": "S3/Compatible",
+      "depends_on": "eval:doc.provider_type=='S3'"
+    },
+    {
+      "fieldname": "s3_bucket",
+      "fieldtype": "Data",
+      "label": "Bucket Name"
+    },
+    {
+      "fieldname": "s3_region",
+      "fieldtype": "Data",
+      "label": "Region"
+    },
+    {
+      "fieldname": "s3_access_key",
+      "fieldtype": "Password",
+      "label": "Access Key"
+    },
+    {
+      "fieldname": "s3_secret_key",
+      "fieldtype": "Password",
+      "label": "Secret Key"
+    },
+    {
+      "fieldname": "s3_endpoint",
+      "fieldtype": "Data",
+      "label": "Custom Endpoint (MinIO)"
+    },
+    {
+      "fieldname": "sb_nextcloud",
+      "fieldtype": "Section Break",
+      "label": "Nextcloud",
+      "depends_on": "eval:doc.provider_type=='Nextcloud'"
+    },
+    {
+      "fieldname": "nc_url",
+      "fieldtype": "Data",
+      "label": "Nextcloud URL"
+    },
+    {
+      "fieldname": "nc_username",
+      "fieldtype": "Data",
+      "label": "Username"
+    },
+    {
+      "fieldname": "nc_password",
+      "fieldtype": "Password",
+      "label": "Password"
+    },
+    {
+      "fieldname": "nc_base_path",
+      "fieldtype": "Data",
+      "label": "Base Path"
+    },
+    {
+      "fieldname": "sb_health",
+      "fieldtype": "Section Break",
+      "label": "Health"
+    },
+    {
+      "fieldname": "last_tested",
+      "fieldtype": "Datetime",
+      "label": "Last Tested",
+      "read_only": 1
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "options": "Unknown\nConnected\nFailed",
+      "label": "Status",
+      "read_only": 1
+    },
+    {
+      "fieldname": "used_space_mb",
+      "fieldtype": "Float",
+      "label": "Used Space (MB)",
+      "read_only": 1
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "DV Administrator",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ]
+}
