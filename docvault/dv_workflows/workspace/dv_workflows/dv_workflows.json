@@ -1,0 +1,68 @@
+{
+  "app": "docvault",
+  "charts": [],
+  "content": "[{\"id\": \"c_1\", \"type\": \"card\", \"data\": {\"card_name\": \"Review & Approval\", \"col\": 4}}]",
+  "creation": "2026-04-08 17:49:10.597531",
+  "custom_blocks": [],
+  "docstatus": 0,
+  "doctype": "Workspace",
+  "for_user": "",
+  "hide_custom": 0,
+  "icon": "git-pull-request",
+  "idx": 0,
+  "is_hidden": 0,
+  "label": "Workflows",
+  "links": [
+    {
+      "type": "Card Break",
+      "label": "Review & Approval",
+      "link_count": 3,
+      "hidden": 0,
+      "is_query_report": 0,
+      "onboard": 0
+    },
+    {
+      "type": "Link",
+      "label": "Review Requests",
+      "link_to": "DV Review Request",
+      "link_type": "DocType",
+      "link_count": 0,
+      "hidden": 0,
+      "is_query_report": 0,
+      "onboard": 1
+    },
+    {
+      "type": "Link",
+      "label": "Approvals",
+      "link_to": "DV Approval",
+      "link_type": "DocType",
+      "link_count": 0,
+      "hidden": 0,
+      "is_query_report": 0,
+      "onboard": 0
+    },
+    {
+      "type": "Link",
+      "label": "Workflow Templates",
+      "link_to": "DV Workflow Template",
+      "link_type": "DocType",
+      "link_count": 0,
+      "hidden": 0,
+      "is_query_report": 0,
+      "onboard": 0
+    }
+  ],
+  "modified": "2026-04-08 17:49:10.597531",
+  "modified_by": "Administrator",
+  "module": "DV Workflows",
+  "name": "DV Workflow Hub",
+  "number_cards": [],
+  "owner": "Administrator",
+  "parent_page": "DocVault",
+  "public": 1,
+  "restrict_to_domain": "",
+  "roles": [],
+  "sequence_id": 2,
+  "shortcuts": [],
+  "title": "Workflows"
+}

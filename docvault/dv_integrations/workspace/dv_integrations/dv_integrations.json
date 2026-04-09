@@ -1,0 +1,48 @@
+{
+  "app": "docvault",
+  "charts": [],
+  "content": "[{\"id\": \"c_1\", \"type\": \"card\", \"data\": {\"card_name\": \"Storage\", \"col\": 4}}]",
+  "creation": "2026-04-08 17:49:10.597531",
+  "custom_blocks": [],
+  "docstatus": 0,
+  "doctype": "Workspace",
+  "for_user": "",
+  "hide_custom": 0,
+  "icon": "plug",
+  "idx": 0,
+  "is_hidden": 0,
+  "label": "Integrations",
+  "links": [
+    {
+      "type": "Card Break",
+      "label": "Storage",
+      "link_count": 0,
+      "hidden": 0,
+      "is_query_report": 0,
+      "onboard": 0
+    },
+    {
+      "type": "Link",
+      "label": "Storage Providers",
+      "link_to": "DV Storage Provider",
+      "link_type": "DocType",
+      "link_count": 0,
+      "hidden": 0,
+      "is_query_report": 0,
+      "onboard": 0
+    }
+  ],
+  "modified": "2026-04-08 17:49:10.597531",
+  "modified_by": "Administrator",
+  "module": "DV Integrations",
+  "name": "DV Integration Hub",
+  "number_cards": [],
+  "owner": "Administrator",
+  "parent_page": "DocVault",
+  "public": 1,
+  "restrict_to_domain": "",
+  "roles": [],
+  "sequence_id": 7,
+  "shortcuts": [],
+  "title": "Integrations"
+}

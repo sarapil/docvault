@@ -1,0 +1,78 @@
+{
+  "app": "docvault",
+  "charts": [],
+  "content": "[{\"id\": \"c_1\", \"type\": \"card\", \"data\": {\"card_name\": \"Compliance & Retention\", \"col\": 4}}]",
+  "creation": "2026-04-08 17:49:10.597531",
+  "custom_blocks": [],
+  "docstatus": 0,
+  "doctype": "Workspace",
+  "for_user": "",
+  "hide_custom": 0,
+  "icon": "shield",
+  "idx": 0,
+  "is_hidden": 0,
+  "label": "Compliance",
+  "links": [
+    {
+      "type": "Card Break",
+      "label": "Compliance & Retention",
+      "link_count": 4,
+      "hidden": 0,
+      "is_query_report": 0,
+      "onboard": 0
+    },
+    {
+      "type": "Link",
+      "label": "Audit Trail",
+      "link_to": "DV Audit Trail",
+      "link_type": "DocType",
+      "link_count": 0,
+      "hidden": 0,
+      "is_query_report": 0,
+      "onboard": 0
+    },
+    {
+      "type": "Link",
+      "label": "Controlled Documents",
+      "link_to": "DV Controlled Document",
+      "link_type": "DocType",
+      "link_count": 0,
+      "hidden": 0,
+      "is_query_report": 0,
+      "onboard": 0
+    },
+    {
+      "type": "Link",
+      "label": "Retention Policies",
+      "link_to": "DV Retention Policy",
+      "link_type": "DocType",
+      "link_count": 0,
+      "hidden": 0,
+      "is_query_report": 0,
+      "onboard": 0
+    },
+    {
+      "type": "Link",
+      "label": "Watermarks",
+      "link_to": "DV Watermark",
+      "link_type": "DocType",
+      "link_count": 0,
+      "hidden": 0,
+      "is_query_report": 0,
+      "onboard": 0
+    }
+  ],
+  "modified": "2026-04-08 17:49:10.597531",
+  "modified_by": "Administrator",
+  "module": "DV Compliance",
+  "name": "DV Compliance Hub",
+  "number_cards": [],
+  "owner": "Administrator",
+  "parent_page": "DocVault",
+  "public": 1,
+  "restrict_to_domain": "",
+  "roles": [],
+  "sequence_id": 3,
+  "shortcuts": [],
+  "title": "Compliance"
+}

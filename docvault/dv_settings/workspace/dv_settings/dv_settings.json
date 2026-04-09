@@ -1,0 +1,153 @@
+{
+  "app": "docvault",
+  "charts": [],
+  "content": "[{\"id\": \"sc_1\", \"type\": \"shortcut\", \"data\": {\"col\": 12}}, {\"id\": \"c_1\", \"type\": \"card\", \"data\": {\"card_name\": \"Documents\", \"col\": 4}}, {\"id\": \"c_2\", \"type\": \"card\", \"data\": {\"card_name\": \"Classification\", \"col\": 4}}, {\"id\": \"c_3\", \"type\": \"card\", \"data\": {\"card_name\": \"Quick Setup\", \"col\": 4}}]",
+  "creation": "2026-04-08 17:49:10.597531",
+  "custom_blocks": [],
+  "docstatus": 0,
+  "doctype": "Workspace",
+  "for_user": "",
+  "hide_custom": 0,
+  "icon": "file-text",
+  "idx": 0,
+  "is_hidden": 0,
+  "label": "DocVault",
+  "links": [
+    {
+      "type": "Card Break",
+      "label": "Documents",
+      "link_count": 4,
+      "hidden": 0,
+      "is_query_report": 0,
+      "onboard": 0
+    },
+    {
+      "type": "Link",
+      "label": "Documents",
+      "link_to": "DV Document",
+      "link_type": "DocType",
+      "link_count": 0,
+      "hidden": 0,
+      "is_query_report": 0,
+      "onboard": 1
+    },
+    {
+      "type": "Link",
+      "label": "Folders",
+      "link_to": "DV Folder",
+      "link_type": "DocType",
+      "link_count": 0,
+      "hidden": 0,
+      "is_query_report": 0,
+      "onboard": 0
+    },
+    {
+      "type": "Link",
+      "label": "Versions",
+      "link_to": "DV Version",
+      "link_type": "DocType",
+      "link_count": 0,
+      "hidden": 0,
+      "is_query_report": 0,
+      "onboard": 0
+    },
+    {
+      "type": "Link",
+      "label": "Templates",
+      "link_to": "DV Template",
+      "link_type": "DocType",
+      "link_count": 0,
+      "hidden": 0,
+      "is_query_report": 0,
+      "onboard": 0
+    },
+    {
+      "type": "Card Break",
+      "label": "Classification",
+      "link_count": 2,
+      "hidden": 0,
+      "is_query_report": 0,
+      "onboard": 0
+    },
+    {
+      "type": "Link",
+      "label": "Categories",
+      "link_to": "DV Category",
+      "link_type": "DocType",
+      "link_count": 0,
+      "hidden": 0,
+      "is_query_report": 0,
+      "onboard": 1
+    },
+    {
+      "type": "Link",
+      "label": "Tags",
+      "link_to": "DV Tag",
+      "link_type": "DocType",
+      "link_count": 0,
+      "hidden": 0,
+      "is_query_report": 0,
+      "onboard": 0
+    },
+    {
+      "type": "Card Break",
+      "label": "Quick Setup",
+      "link_count": 0,
+      "hidden": 0,
+      "is_query_report": 0,
+      "onboard": 0
+    },
+    {
+      "type": "Link",
+      "label": "Settings",
+      "link_to": "DV Settings",
+      "link_type": "DocType",
+      "link_count": 0,
+      "hidden": 0,
+      "is_query_report": 0,
+      "onboard": 0
+    }
+  ],
+  "modified": "2026-04-08 17:49:10.597531",
+  "modified_by": "Administrator",
+  "module": "DV Settings",
+  "name": "DocVault",
+  "number_cards": [],
+  "owner": "Administrator",
+  "parent_page": "",
+  "public": 1,
+  "restrict_to_domain": "",
+  "roles": [],
+  "sequence_id": 1,
+  "shortcuts": [
+    {
+      "label": "Documents",
+      "link_to": "DV Document",
+      "type": "DocType",
+      "color": "Green",
+      "doc_view": "List"
+    },
+    {
+      "label": "Folders",
+      "link_to": "DV Folder",
+      "type": "DocType",
+      "color": "Blue",
+      "doc_view": "List"
+    },
+    {
+      "label": "Reviews",
+      "link_to": "DV Review Request",
+      "type": "DocType",
+      "color": "Orange",
+      "doc_view": "List"
+    },
+    {
+      "label": "Audit Trail",
+      "link_to": "DV Audit Trail",
+      "type": "DocType",
+      "color": "Red",
+      "doc_view": "List"
+    }
+  ],
+  "title": "DocVault"
+}
