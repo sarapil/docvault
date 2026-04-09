@@ -57,8 +57,8 @@ bench --site your-site migrate
 
 ## Reports
 
-| Report | Module | Description |
-|--------|--------|-------------|
+| Report            | Module        | Description                                  |
+| ----------------- | ------------- | -------------------------------------------- |
 | Document Activity | DV Compliance | Document activity by status with donut chart |
 
 ## Contributing
