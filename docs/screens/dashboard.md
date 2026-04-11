@@ -1,4 +1,5 @@
 # DocVault — Main Dashboard Screen
+
 # لوحة التحكم الرئيسية — خزنة المستندات
 
 ## Screen Identity
@@ -9,14 +10,14 @@
 
 ## frappe_visual Components
 
-| Component | Purpose |
-|-----------|---------|
+| Component           | Purpose                          |
+| ------------------- | -------------------------------- |
 | `scenePresetOffice` | Workspace header with KPI frames |
-| `DataCard` | Document counts by status |
-| `Donut` | Documents by category breakdown |
-| `Sparkline` | Upload activity trend (7 days) |
-| `Area` | Storage usage over time |
-| `KanbanBoard` | Document workflow pipeline |
+| `DataCard`          | Document counts by status        |
+| `Donut`             | Documents by category breakdown  |
+| `Sparkline`         | Upload activity trend (7 days)   |
+| `Area`              | Storage usage over time          |
+| `KanbanBoard`       | Document workflow pipeline       |
 
 ## CSS Effects (minimum 3)
 
@@ -42,11 +43,11 @@
 
 ## Responsive Breakpoints
 
-| Breakpoint | Layout |
-|-----------|--------|
-| Desktop (≥1024px) | 2-column grid, full scene header |
-| Tablet (768-1023px) | Single column, compact scene |
-| Mobile (320-767px) | Stacked cards, no scene header |
+| Breakpoint          | Layout                           |
+| ------------------- | -------------------------------- |
+| Desktop (≥1024px)   | 2-column grid, full scene header |
+| Tablet (768-1023px) | Single column, compact scene     |
+| Mobile (320-767px)  | Stacked cards, no scene header   |
 
 ## Dark Mode
 

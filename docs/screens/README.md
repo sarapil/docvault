@@ -1,10 +1,11 @@
 # DocVault — Screen Designs Index
+
 # فهرس تصاميم الشاشات — خزنة المستندات
 
 ## Screens
 
-| Screen | File | Scenarios Served |
-|--------|------|-----------------|
+| Screen         | File                         | Scenarios Served   |
+| -------------- | ---------------------------- | ------------------ |
 | Main Dashboard | [dashboard.md](dashboard.md) | DS-001 (all roles) |
 
 ## Design Guidelines

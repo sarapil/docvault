@@ -1,4 +1,5 @@
 # DV Compliance Officer — Usage Scenarios
+
 # سيناريوهات استخدام — مسؤول الامتثال
 
 ## Role Overview
@@ -11,6 +12,7 @@
 ## Daily Scenarios (يومي)
 
 ### DS-001: Review Audit Trail
+
 - **Goal**: Review recent document access and modifications
 - **Steps**:
   1. Navigate to DV Compliance → DV Audit Log list
@@ -19,6 +21,7 @@
   4. Flag anomalies for investigation
 
 ### DS-002: Manage Controlled Documents
+
 - **Goal**: Review and approve controlled document submissions
 - **Steps**:
   1. Navigate to DV Compliance → DV Controlled Document list
@@ -29,6 +32,7 @@
 ## Weekly Scenarios (أسبوعي)
 
 ### WS-001: Retention Policy Enforcement
+
 - **Goal**: Ensure retention schedules are applied correctly
 - **Steps**:
   1. Navigate to DV Compliance → DV Retention Schedule list
@@ -37,6 +41,7 @@
   4. Approve scheduled actions or defer with justification
 
 ### WS-002: Compliance Report Review
+
 - **Goal**: Generate and review weekly compliance summary
 - **Steps**:
   1. Open Document Activity report

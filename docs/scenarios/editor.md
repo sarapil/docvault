@@ -1,4 +1,5 @@
 # DV Editor — Usage Scenarios
+
 # سيناريوهات استخدام — محرر المستندات
 
 ## Role Overview
@@ -11,6 +12,7 @@
 ## Daily Scenarios (يومي)
 
 ### DS-001: Upload New Document
+
 - **Goal**: Upload and classify a new document
 - **Steps**:
   1. Navigate to DV Core → DV Document → New
@@ -19,6 +21,7 @@
   4. Save — version 1 created automatically
 
 ### DS-002: Upload New Version
+
 - **Goal**: Update an existing document with a new file
 - **Steps**:
   1. Open existing DV Document
@@ -28,6 +31,7 @@
   5. Check in — version incremented
 
 ### DS-003: Search for Documents
+
 - **Goal**: Find a specific document
 - **Steps**:
   1. Navigate to DV Search workspace

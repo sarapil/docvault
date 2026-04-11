@@ -1,4 +1,5 @@
 # DV Admin — Usage Scenarios
+
 # سيناريوهات استخدام — مدير النظام
 
 ## Role Overview
@@ -11,6 +12,7 @@
 ## Daily Scenarios (يومي)
 
 ### DS-001: Create Category Structure
+
 - **Goal**: Set up document classification hierarchy
 - **Steps**:
   1. Navigate to Classification workspace → DV Category → New
@@ -19,6 +21,7 @@
   4. Verify: Category tree displays correctly
 
 ### DS-002: Configure Folder Structure
+
 - **Goal**: Organize document storage folders
 - **Steps**:
   1. Navigate to DV Core → DV Folder → New
@@ -28,6 +31,7 @@
 ## Weekly Scenarios (أسبوعي)
 
 ### WS-001: Define Retention Policy
+
 - **Goal**: Set document retention rules for compliance
 - **Steps**:
   1. Navigate to DV Compliance → DV Retention Policy → New

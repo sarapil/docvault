@@ -1,4 +1,5 @@
 # DocVault — Entity Relationship Diagram
+
 # مخطط علاقات الكيانات — DocVault
 
 ```mermaid
