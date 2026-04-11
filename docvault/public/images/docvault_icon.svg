@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="DocVault icon">
+  <defs>
+    <linearGradient id="dvg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#065F46"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="112" height="112" rx="24" fill="url(#dvg)"/>
+  <rect x="32" y="24" width="48" height="64" rx="6" fill="#D1FAE5"/>
+  <path d="M80 36V24l16 12H84a4 4 0 0 1-4-4z" fill="#A7F3D0"/>
+  <rect x="44" y="52" width="24" height="8" rx="2" fill="#047857"/>
+  <rect x="44" y="66" width="16" height="8" rx="2" fill="#047857"/>
+</svg>
