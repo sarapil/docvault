@@ -1,0 +1,73 @@
+/* docvault — Combined CSS (reduces HTTP requests) */
+/* Auto-generated from 2 individual files */
+
+/* === docvault-theme.css === */
+/* Copyright (c) 2024, Moataz M Hassan (Arkan Lab)
+   Developer Website: https://arkan.it.com
+   License: MIT
+   For license information, please see license.txt */
+
+/* DocVault — Theme CSS
+ * Brand: Emerald #059669
+ * Domain: Document Management System
+ */
+
+:root {
+  --docvault-primary: #059669;
+  --docvault-primary-dark: #047857;
+  --docvault-primary-light: #05966933;
+  --docvault-primary-subtle: #0596690D;
+
+  --docvault-bg: #FFFFFF;
+  --docvault-bg-subtle: #F8FAFC;
+  --docvault-text: #1E293B;
+  --docvault-text-muted: #64748B;
+  --docvault-border: #E2E8F0;
+
+  --docvault-success: #10B981;
+  --docvault-warning: #F59E0B;
+  --docvault-danger: #EF4444;
+  --docvault-info: #3B82F6;
+}
+
+body[data-theme="dark"] {
+  --docvault-bg: #1E293B;
+  --docvault-bg-subtle: #0F172A;
+  --docvault-text: #F1F5F9;
+  --docvault-text-muted: #94A3B8;
+  --docvault-border: #334155;
+}
+
+
+/* === docvault-variables.css === */
+/* Copyright (c) 2024, Moataz M Hassan (Arkan Lab)
+   Developer Website: https://arkan.it.com
+   License: MIT
+   For license information, please see license.txt */
+
+/* DocVault — CSS Variables
+ * Brand: Emerald #059669
+ */
+
+:root {
+  --dv-emerald: #059669;
+  --dv-emerald-light: #34D399;
+  --dv-emerald-lighter: #A7F3D0;
+  --dv-emerald-dark: #047857;
+  --dv-emerald-gradient: linear-gradient(135deg, #059669 0%, #34D399 100%);
+
+  --dv-accent: #059669;
+  --dv-accent-bg: rgba(5, 150, 105, 0.08);
+  --dv-accent-hover: rgba(5, 150, 105, 0.15);
+
+  --dv-active: #10B981;
+  --dv-archived: #64748B;
+  --dv-expired: #EF4444;
+  --dv-pending-review: #F59E0B;
+
+  --dv-sidebar-width: 250px;
+  --dv-border-radius: 8px;
+  --dv-transition: all 0.2s ease;
+}
+
+

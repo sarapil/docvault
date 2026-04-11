@@ -48,14 +48,8 @@ add_to_apps_screen = [
 ]
 
 # Includes in <head>
-app_include_css = [
-    "/assets/docvault/css/docvault-theme.css",
-    "/assets/docvault/css/docvault-variables.css",
-]
-app_include_js = [
-    "/assets/docvault/js/docvault_boot.js",
-    "/assets/docvault/js/fv_integration.js",
-]
+app_include_css = ["/assets/docvault/css/docvault_combined.css"]
+app_include_js = ["/assets/docvault/js/docvault_combined.js"]
 
 # Installation
 before_install = "docvault.install.before_install"
