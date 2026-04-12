@@ -48,8 +48,8 @@ add_to_apps_screen = [
 ]
 
 # Includes in <head>
-# MEGA: app_include_css = ["/assets/docvault/css/docvault_combined.css"]
-# MEGA: app_include_js = ["/assets/docvault/js/docvault_combined.js"]
+app_include_css = ["/assets/docvault/css/docvault_combined.css"]
+app_include_js = ["/assets/docvault/js/docvault_combined.js"]
 
 # Installation
 before_install = "docvault.install.before_install"
