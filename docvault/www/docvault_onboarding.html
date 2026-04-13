@@ -1,0 +1,108 @@
+{% extends "templates/web.html" %}
+{% block title %}{{ _("DocVault Onboarding") }} | {{ _("بدء استخدام إدارة الوثائق") }}{% endblock %}
+
+{% block head_include %}
+<style>
+.dv-onboard-container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+.dv-onboard-header { text-align: center; margin-bottom: 3rem; }
+.dv-onboard-header h1 { color: #059669; margin-bottom: 0.5rem; }
+.dv-onboard-step {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--card-bg);
+    border-radius: 12px;
+    border-left: 4px solid #059669;
+}
+.dv-step-number {
+    width: 40px;
+    height: 40px;
+    background: #059669;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+.dv-step-content h3 { margin: 0 0 0.5rem 0; }
+.dv-step-content p { margin: 0; color: var(--text-muted); }
+.dv-step-link { color: #059669; text-decoration: none; font-weight: 500; }
+.dv-step-link:hover { text-decoration: underline; }
+.dv-tips { background: rgba(5, 150, 105, 0.1); border-radius: 12px; padding: 1.5rem; margin-top: 2rem; }
+.dv-tips h3 { color: #059669; margin-bottom: 1rem; }
+.dv-tips ul { margin: 0; padding-inline-start: 1.5rem; }
+.dv-tips li { margin-bottom: 0.5rem; }
+[dir="rtl"] .dv-onboard-step { border-left: none; border-right: 4px solid #059669; }
+</style>
+{% endblock %}
+
+{% block page_content %}
+<div class="dv-onboard-container">
+    <header class="dv-onboard-header">
+        <h1>🚀 {{ _("Welcome to DocVault") }}</h1>
+        <p>{{ _("Follow these steps to set up your document management system") }}</p>
+        <p>{{ _("اتبع هذه الخطوات لإعداد نظام إدارة المستندات") }}</p>
+    </header>
+
+    <div class="dv-onboard-steps">
+        <div class="dv-onboard-step">
+            <div class="dv-step-number">1</div>
+            <div class="dv-step-content">
+                <h3>{{ _("Create Folder Structure") }}</h3>
+                <p>{{ _("Design your folder hierarchy to match your organization structure. Set permissions at each level.") }}</p>
+                <a href="/app/dv-folder" class="dv-step-link">→ {{ _("Go to Folders") }}</a>
+            </div>
+        </div>
+
+        <div class="dv-onboard-step">
+            <div class="dv-step-number">2</div>
+            <div class="dv-step-content">
+                <h3>{{ _("Define Document Categories") }}</h3>
+                <p>{{ _("Create document categories with custom metadata fields and retention rules.") }}</p>
+                <a href="/app/dv-document-category" class="dv-step-link">→ {{ _("Go to Categories") }}</a>
+            </div>
+        </div>
+
+        <div class="dv-onboard-step">
+            <div class="dv-step-number">3</div>
+            <div class="dv-step-content">
+                <h3>{{ _("Set Up Retention Policies") }}</h3>
+                <p>{{ _("Configure retention schedules and automated disposal rules for compliance.") }}</p>
+                <a href="/app/dv-retention-policy" class="dv-step-link">→ {{ _("Go to Policies") }}</a>
+            </div>
+        </div>
+
+        <div class="dv-onboard-step">
+            <div class="dv-step-number">4</div>
+            <div class="dv-step-content">
+                <h3>{{ _("Upload Documents") }}</h3>
+                <p>{{ _("Start uploading documents. Use bulk import for migrating existing files.") }}</p>
+                <a href="/app/dv-document" class="dv-step-link">→ {{ _("Go to Documents") }}</a>
+            </div>
+        </div>
+
+        <div class="dv-onboard-step">
+            <div class="dv-step-number">5</div>
+            <div class="dv-step-content">
+                <h3>{{ _("Configure Workflows") }}</h3>
+                <p>{{ _("Set up approval workflows for document review and publication.") }}</p>
+                <a href="/app/dv-workflow-template" class="dv-step-link">→ {{ _("Go to Workflows") }}</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="dv-tips">
+        <h3>💡 {{ _("Quick Tips") }}</h3>
+        <ul>
+            <li>{{ _("Use descriptive folder names for easy navigation") }}</li>
+            <li>{{ _("Enable version control for frequently updated documents") }}</li>
+            <li>{{ _("Set up email notifications for workflow approvals") }}</li>
+            <li>{{ _("Use tags for cross-cutting categorization") }}</li>
+            <li>{{ _("Regular audit reports help maintain compliance") }}</li>
+        </ul>
+    </div>
+</div>
+{% endblock %}
